@@ -245,6 +245,7 @@ function Footer() {
                 className="
               focus:outline-none
               text-primary
+              placeholder-primary
               "
                 placeholder="Enter Your email "
               />
