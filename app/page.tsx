@@ -8,16 +8,22 @@ import InstallApp from "@/components/home/install-app";
 import Reviews from "@/components/home/reviews";
 import Search from "@/components/home/search";
 import StoryCard from "@/components/home/story-card";
-import Image from "next/image";
+import React from "react";
 
 export default function Home() {
   return (
     <main className="">
-      <Header />
-      <Banner />
+      <div
+        style={{
+          background: "linear-gradient(to bottom, #000, #46484F)",
+          height: "80vh",
+        }}
+      >
+        <Header />
+        <Banner />
+      </div>
       <Search />
       <Explore />
-      <ExploreCard />
       <Experience />
       <Reviews />
       <InstallApp />
