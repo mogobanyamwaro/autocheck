@@ -21,7 +21,19 @@ export default function Home() {
       <Experience />
       <Reviews />
       <InstallApp />
-      <StoryCard />
+      <div className="bg-gray pb-20 pt-4">
+        <h1 className="pb-4 pt-4 text-center text-xl text-primary">
+          Read Our Stories
+        </h1>
+        <div className="mx-auto grid max-w-7xl grid-cols-1 gap-8 px-8 sm:grid-cols-2 lg:grid-cols-3">
+          {Array(3)
+            .fill(0)
+            .map((_, i) => {
+              return <StoryCard key={i} />;
+            })}
+        </div>
+      </div>
+
       <Footer />
     </main>
   );

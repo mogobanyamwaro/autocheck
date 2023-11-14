@@ -12,6 +12,7 @@ const config: Config = {
       secondary: "#ccc",
       orange: "#FE5C3D",
       white: "#fff",
+      gray: "#F3F3F3",
     },
     extend: {
       backgroundImage: {
