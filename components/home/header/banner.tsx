@@ -3,7 +3,7 @@ import { SlSocialFacebook } from "react-icons/sl";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiInstagram } from "react-icons/ci";
 import Image from "next/image";
-import Speedometer from "@/components/common/Speedometer";
+
 function Banner() {
   return (
     <div className="mx-auto mt-10  max-w-7xl  px-8 pt-3">
@@ -57,9 +57,15 @@ function Banner() {
           />
         </div>
         <div className="ml-4 flex h-64 w-4/12 items-center justify-between">
-          <Speedometer />
-          <Speedometer />
-          <Speedometer />
+          <div className="">
+            <img src="/images/km.svg" alt="" />
+          </div>
+          <div className="">
+            <img src="/images/km1.svg" alt="" />
+          </div>
+          <div className="">
+            <img src="/images/km2.svg" alt="" />
+          </div>
         </div>
       </div>
     </div>
