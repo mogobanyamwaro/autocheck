@@ -13,9 +13,19 @@ import { useRouter } from "next/navigation";
 function ExploreCard({ car }: { car: ICar }) {
   const router = useRouter();
   return (
-    <div className="max-w-xs rounded-md bg-white p-3">
+    <div className=" max-w-xs rounded-md bg-white p-3">
       <div className="rounded-md bg-gray p-3">
-        <Image src={car?.imageUrl} width={400} height={400} alt="" />
+        <Image
+          src={car?.imageUrl}
+          width={400}
+          height={500}
+          className="
+        h-40
+        w-full
+        object-cover
+        "
+          alt=""
+        />
       </div>
       <p className="my-3 flex  items-center text-xs text-primary">
         <FaStar className="mr-2 text-orange" />

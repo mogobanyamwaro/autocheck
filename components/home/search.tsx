@@ -23,10 +23,10 @@ function Search() {
     });
   };
   return (
-    <div className="mx-auto mb-16 mt-32 max-w-7xl  bg-gray  px-8 pt-3">
+    <div className="mx-auto mb-16 mt-40 max-w-7xl  bg-gray px-8  pt-3 md:mt-32">
       <div className="flex justify-center">
         <div className="   rounded bg-white shadow-lg">
-          <div className="flex items-center px-4 py-5">
+          <div className="flex flex-wrap items-center px-4 py-5 xl:flex-nowrap">
             <SearchAutocomplete
               onLoad={onLoad}
               onPlacesChanged={onPlacesChanged}

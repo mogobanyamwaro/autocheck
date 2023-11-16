@@ -11,8 +11,8 @@ function Footer() {
   return (
     <footer className="bg-primary px-8 pb-8">
       <div className="mx-auto max-w-7xl">
-        <div className="flex h-64 justify-between pt-8 ">
-          <div className="flex w-1/4 flex-col items-start justify-center">
+        <div className="flex h-full flex-wrap justify-between pt-8 lg:h-64 lg:flex-nowrap ">
+          <div className="mb-10 flex flex-col items-start  justify-center md:mb-0 lg:w-1/4">
             <h5>Car Rental</h5>
             <p className="mb-4 mt-2 text-secondary">
               Anywhere, anytime, we always provide the best services!
@@ -74,7 +74,7 @@ function Footer() {
             </div>
           </div>
 
-          <div className="flex w-1/4 flex-col items-start justify-center">
+          <div className="mt-10 flex flex-col items-start justify-center md:mt-0 lg:w-1/4">
             <h5>Connect with us</h5>
             <div className="mb-4 mt-2 flex w-24 justify-between">
               <SlSocialFacebook className="group h-7 w-7 cursor-pointer rounded-full border-2 border-secondary p-1 text-secondary hover:bg-orange group-hover:border-orange" />
@@ -82,7 +82,7 @@ function Footer() {
               <CiInstagram className="h-7 w-7 cursor-pointer rounded-full border-2 border-secondary p-1 text-secondary hover:bg-orange" />
             </div>
             <p className="mb-1 text-secondary">Subscribe to your newsletter</p>
-            <div className="rounded-md bg-white px-4 py-2">
+            <div className="flex rounded-md bg-white px-4 py-2 lg:flex-none">
               <input
                 type="text"
                 className="text-primary placeholder-primary focus:outline-none"

@@ -25,3 +25,18 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+.explore {
+  height: 60vh;
+}
+.review {
+  height: 70vh;
+}
+
+@media (max-width: 768px) {
+  .explore {
+    height: 100%;
+  }
+  .review {
+    height: 100%;
+  }
+}

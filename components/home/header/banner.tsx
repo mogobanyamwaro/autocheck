@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { SlSocialFacebook } from "react-icons/sl";
 import { FaXTwitter } from "react-icons/fa6";
@@ -16,10 +17,10 @@ function Banner() {
           </div>
         </div>
         <div className="flex w-9/12 flex-col items-center">
-          <h1 className="whitespace-nowrap text-7xl">
+          <h1 className="whitespace-nowrap lg:text-7xl">
             Fast And Easy Way To Rent
           </h1>
-          <h1 className="mb-5 mt-2 text-7xl">
+          <h1 className="mb-5 mt-2  lg:text-7xl">
             <span className="text-orange">A Branded </span>
             Car
           </h1>
@@ -47,18 +48,18 @@ function Banner() {
           </div>
         </div>
       </div>
-      <div className="flex">
+      <div className="flex flex-col lg:flex-row">
         {" "}
-        <div className="h-64 w-7/12">
+        <div className="mt-10 hidden lg:mt-0 lg:block lg:h-96 lg:w-7/12">
           <img
             className="h-full w-full"
             src="https://images.pexels.com/photos/10292239/pexels-photo-10292239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
             alt=""
           />
         </div>
-        <div className="ml-4 flex h-64 w-4/12 items-center justify-between">
+        <div className="ml-4 mt-10 flex items-center justify-center md:mt-0 lg:h-64 lg:w-4/12 lg:justify-between ">
           <div className="">
-            <img src="/images/km.svg" alt="" />
+            <img src="/images/km.svg" className="" alt="" />
           </div>
           <div className="">
             <img src="/images/km1.svg" alt="" />
@@ -66,6 +67,13 @@ function Banner() {
           <div className="">
             <img src="/images/km2.svg" alt="" />
           </div>
+        </div>
+        <div className=" mt-10 lg:mt-0 lg:hidden lg:h-96 lg:w-7/12">
+          <img
+            className="h-full w-full"
+            src="https://images.pexels.com/photos/10292239/pexels-photo-10292239.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
         </div>
       </div>
     </div>

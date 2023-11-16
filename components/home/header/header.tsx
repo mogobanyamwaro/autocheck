@@ -7,7 +7,7 @@ function Header() {
       <div>
         <h1 className="cursor-pointer text-orange">Automobile</h1>
       </div>
-      <ul className="flex w-6/12 justify-between text-secondary ">
+      <ul className="hidden w-6/12 justify-between text-secondary lg:flex  ">
         <li className="cursor-pointer hover:text-orange">Home</li>
         <li className="cursor-pointer hover:text-orange">About</li>
         <li className="cursor-pointer hover:text-orange">Cars</li>

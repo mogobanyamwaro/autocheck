@@ -47,12 +47,15 @@ function Explore() {
       <h1 className="mb-20 text-center text-xl font-semibold text-primary">
         From Top Rated Dealers
       </h1>
-      <div className="mx-auto mb-10 flex max-w-3xl justify-between">
+      <div className="mx-auto mb-10 flex max-w-3xl flex-wrap justify-evenly lg:flex-nowrap lg:justify-between">
         {!isLoading &&
           carMakes?.map((deal) => {
             const car = data?.makeList.find((make) => make.name === deal);
             return (
-              <div key={deal} className="flex items-center justify-center">
+              <div
+                key={deal}
+                className=" mt-2 flex items-center justify-center lg:mt-0"
+              >
                 {car?.imageUrl && (
                   <img
                     src={car?.imageUrl}

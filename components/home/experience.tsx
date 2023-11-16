@@ -5,6 +5,7 @@ import { FaClock } from "react-icons/fa";
 import { GoPersonFill } from "react-icons/go";
 import { FaDollarSign } from "react-icons/fa";
 import { IoChatbubblesSharp } from "react-icons/io5";
+import clsx from "clsx";
 
 function Experience() {
   return (
@@ -21,16 +22,16 @@ function Experience() {
           with our rental deals
         </h1>
         <div
-          style={{
-            height: "60vh",
-          }}
-          className="flex  flex-col-reverse items-center justify-between md:flex-row"
+          className={clsx(
+            "mb-5 flex  flex-col items-center  lg:mb-0 lg:flex-row  lg:justify-between",
+            "explore",
+          )}
         >
           <div
-            style={{
-              height: "60vh",
-            }}
-            className="mt-8 flex w-8/12 pb-24   md:mt-0"
+            className={clsx(
+              "mt-8 flex w-full pb-24 md:mt-0  lg:w-8/12",
+              "explore",
+            )}
           >
             <img
               src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800"
@@ -40,12 +41,12 @@ function Experience() {
           </div>
 
           <div
-            style={{
-              height: "60vh",
-            }}
-            className="flex w-4/12 flex-col  text-white"
+            className={clsx(
+              "flex w-full flex-col text-white  lg:w-4/12",
+              "explore",
+            )}
           >
-            <div className="ml-5 flex items-center">
+            <div className="ml-5 flex items-center ">
               <GoPersonFill
                 className="mr-5 h-12 w-12  rounded-md border-2 bg-orange p-1 text-white "
                 alt=""

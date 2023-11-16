@@ -2,37 +2,40 @@
 import Image from "next/image";
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import clsx from "clsx";
 
 function Reviews() {
   return (
     <div className=" bg-primary">
-      <div className="mx-auto max-w-7xl px-8 py-24">
+      <div className="mx-auto max-w-7xl px-8 py-10 lg:py-24">
         <div
-          style={{
-            height: "70vh",
-          }}
-          className="flex  flex-col-reverse items-center justify-between md:flex-row"
+          className={clsx(
+            "flex  flex-col-reverse items-center justify-between md:flex-row",
+            "review",
+          )}
         >
           {/* Text Content */}
           <div
-            style={{
-              height: "70vh",
-            }}
-            className="flex w-5/12 flex-col justify-evenly text-white"
+            className={clsx(
+              "mt-8 flex flex-col justify-evenly text-white lg:mt-0 lg:w-5/12",
+              "review",
+            )}
           >
             <small className="text-xs text-secondary">Testimonials</small>
-            <h1 className="text-xl">Our Client`s Reviews & Testimonials</h1>
-            <p className="text-sm text-secondary">
+            <h1 className="mt-7 text-xl lg:mt-0">
+              Our Client`s Reviews & Testimonials
+            </h1>
+            <p className="mt-4 text-sm text-secondary lg:mt-0">
               The majority of our users tell us that readable content distracts
               readers. The majority of our users tell us that readable content.
             </p>
-            <p className="text-sm text-secondary">
+            <p className="mt-4 text-sm text-secondary lg:mt-0">
               &ldquo;There are amazing people working here who are down-to-earth
               and willing to work with anyone! Their priority is to take care of
               their own and make sure you&apos;re satisfied! They take care of
               their own and make sure you&apos;re satisfied!&rdquo;
             </p>
-            <p className="flex items-center">
+            <p className="mt-7 flex items-center lg:mt-0">
               {Array.from({ length: 5 }).map((_, i) => (
                 <FaStar className="mr-2 text-orange" key={i} />
               ))}
@@ -52,12 +55,7 @@ function Reviews() {
           </div>
 
           {/* Image Content */}
-          <div
-            style={{
-              height: "60vh",
-            }}
-            className="mt-8 w-7/12 md:mt-0"
-          >
+          <div className={clsx("md:mt-0 lg:mt-8 lg:w-7/12", "explore")}>
             <img
               src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt=""
