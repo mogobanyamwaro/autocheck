@@ -24,7 +24,7 @@ const list = [
     type: "discount",
   },
   {
-    title: "Cleaning Supplies",
+    title: " Supplies",
     money: 52,
     type: "cleanfee",
   },
@@ -53,7 +53,7 @@ export default function OrderForm({
       noValidate
       onSubmit={() => {}}
       className={clsx(
-        "border-gray-lighter shadow-card mt-5 rounded-xl border bg-white p-8",
+        "border-gray-lighter shadow-card mt-5 max-w-md rounded-xl border bg-white p-8",
         className,
       )}
     >
@@ -88,12 +88,14 @@ export default function OrderForm({
         onBlur={() => setFocus(false)}
       ></div>
 
-      <button
-        type="submit"
-        className="mt-5 w-full rounded-sm bg-orange px-3 py-2 text-xs text-white "
-      >
-        BUY NOW
-      </button>
+      <div className="flex items-center justify-center">
+        <button
+          type="submit"
+          className="mt-5 flex w-full max-w-xs justify-center rounded-sm bg-orange px-3 py-2 text-xs text-white "
+        >
+          BUY NOW
+        </button>
+      </div>
       <ul className="mt-3 xl:mt-5">
         {list.map((item) => (
           <li

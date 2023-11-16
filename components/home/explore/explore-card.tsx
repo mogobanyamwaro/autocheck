@@ -14,7 +14,10 @@ function ExploreCard({ car }: { car: ICar }) {
   const router = useRouter();
   return (
     <div className=" max-w-xs rounded-md bg-white p-3">
-      <div className="rounded-md bg-gray p-3">
+      <div
+        onClick={() => router.push(`/car/${car.id}`)}
+        className="cursor-pointer rounded-md bg-gray p-3"
+      >
         <Image
           src={car?.imageUrl}
           width={400}

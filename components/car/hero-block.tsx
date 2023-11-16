@@ -74,14 +74,21 @@ export default function ListingDetailsHeroBlock({ vendor }: any) {
       <div>
         <p className="text-primary">{vendor.location}</p>
         <h2 className="4xl:!text-3xl mt-2 !text-2xl uppercase !leading-7 text-primary md:!text-[26px] md:!leading-10 2xl:!text-[28px]">
-          {vendor.boatName}
+          {"4000 cc"}
         </h2>
         <div className="mt-3 flex items-center gap-2 leading-4 text-primary md:mt-4">
-          <p>{vendor.boatGuests} guests</p>
+          <p>{4} Passenger</p>
           <span className="mt-1 block h-1.5 w-1.5 rounded-full bg-primary"></span>
-          <p>{vendor.boatCabins} cabins</p>
+          <p>{3} cabins</p>
           <span className="mt-1 block h-1.5 w-1.5 rounded-full bg-primary"></span>
-          <p>{vendor.boatBathrooms} bathrooms</p>
+          <p>{50_000} mileage</p>
+        </div>
+        <div className="mt-3 flex items-center gap-2 leading-4 text-primary md:mt-4">
+          <p> 2019</p>
+          <span className="mt-1 block h-1.5 w-1.5 rounded-full bg-primary"></span>
+          <p>{3} cabins</p>
+          <span className="mt-1 block h-1.5 w-1.5 rounded-full bg-primary"></span>
+          <p>{50_000} mileage</p>
         </div>
       </div>
       <div className="relative">
