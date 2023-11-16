@@ -1,10 +1,13 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { SlSocialFacebook } from "react-icons/sl";
 import { FaXTwitter } from "react-icons/fa6";
 import { CiInstagram } from "react-icons/ci";
+import { useRouter } from "next/navigation";
 
 function Footer() {
+  const router = useRouter();
   return (
     <footer className="bg-primary px-8 pb-8">
       <div className="mx-auto max-w-7xl">
@@ -30,7 +33,14 @@ function Footer() {
           <div className="flex flex-col">
             <h5 className="mb-8">Services</h5>
             <div className="flex h-40 flex-col justify-between text-secondary">
-              <p>Home</p>
+              <p
+                className="cursor-pointer"
+                onClick={() => {
+                  router.push("/");
+                }}
+              >
+                Home
+              </p>
               <p>Download</p>
               <p>Pricing</p>
               <p>About</p>
@@ -40,7 +50,14 @@ function Footer() {
           <div className="flex flex-col">
             <h5 className="mb-8">Resources</h5>
             <div className="flex h-40 flex-col justify-between text-secondary">
-              <p>Home</p>
+              <p
+                className="cursor-pointer"
+                onClick={() => {
+                  router.push("/");
+                }}
+              >
+                Home
+              </p>
               <p>Download</p>
               <p>Pricing</p>
               <p>About</p>
