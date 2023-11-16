@@ -4,6 +4,11 @@
 
 Welcome to AutoCheck App – your go-to platform for exploring a wide range of cars that match your needs. This platform provides a seamless experience for users looking to make an informed decision on their next vehicle purchase.
 
+# Screenshots
+
+![Screenshot 1](public/images/lambo.png)
+![Screenshot 2](public/images/phone.png)
+
 ## Getting Started
 
 To get started with the AutoCheck App, follow these steps:
@@ -57,5 +62,3 @@ We welcome any feedback or suggestions to improve the AutoCheck App. Feel free t
 Happy car shopping!
 
 ---
-
-Feel free to copy and paste this condensed version into your README file.
