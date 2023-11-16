@@ -9,17 +9,25 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@headlessui/react": "1.7.14",
+    "@heroicons/react": "2.0.18",
+    "@hookform/resolvers": "2.9.10",
     "@react-google-maps/api": "2.18.1",
     "@tanstack/react-query": "^5.8.4",
     "@tanstack/react-query-devtools": "^5.8.4",
     "@tanstack/react-query-next-experimental": "^5.8.4",
     "clsx": "^2.0.0",
     "date-fns": "^2.30.0",
+    "jotai": "^2.5.1",
     "next": "14.0.2",
     "react": "^18",
+    "react-content-loader": "^6.2.1",
     "react-datepicker": "^4.21.0",
     "react-dom": "^18",
-    "react-icons": "^4.11.0"
+    "react-hook-form": "^7.48.2",
+    "react-icons": "^4.11.0",
+    "swiper": "8.4.5",
+    "zod": "^3.22.4"
   },
   "devDependencies": {
     "@types/node": "^20",
