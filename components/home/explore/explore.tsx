@@ -1,19 +1,35 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 import React, { useState } from "react";
 import StoryCard from "../story-card";
 import ExploreCard from "./explore-card";
+import { useQuery } from "@tanstack/react-query";
+
+export interface ICarMake {
+  id: number;
+  name: string;
+  imageUrl: string;
+}
+export interface ImakeList {
+  makeList: ICarMake[];
+}
+
+async function getCarMakes() {
+  return (await fetch(
+    `${process.env.NEXT_PUBLIC_BASE_URL}/make?popular=true`,
+  ).then((res) => res.json())) as ImakeList;
+}
 
 function Explore() {
-  const deals = [
-    "Bmw",
-    "Toyota",
-    "Mercedes Benz",
-    "Lexus",
-    "Nissan",
-    "Explore 20+",
-  ];
+  const [selectedDeal, setSelectedDeal] = useState("BMW");
+  const { data, isLoading } = useQuery({
+    queryKey: ["car-makes"],
+    queryFn: () => getCarMakes(),
+    staleTime: 1000 * 60 * 5,
+  });
 
-  const [selectedDeal, setSelectedDeal] = useState("Bmw");
+  const carMakes = data?.makeList.map((make) => make.name).slice(0, 5);
+  carMakes?.push("Explore 20+");
 
   const handleDealClick = (deal: string) => {
     setSelectedDeal(deal);
@@ -30,18 +46,32 @@ function Explore() {
       <h1 className="mb-20 text-center text-xl font-semibold text-primary">
         From Top Rated Dealers
       </h1>
-      <div className="mx-auto mb-10 flex max-w-lg justify-between">
-        {deals.map((deal) => (
-          <p
-            key={deal}
-            className={`rounded-md px-2 py-1 text-${
-              selectedDeal === deal ? "white bg-orange" : "primary bg-white"
-            }`}
-            onClick={() => handleDealClick(deal)}
-          >
-            {deal}
-          </p>
-        ))}
+      <div className="mx-auto mb-10 flex max-w-3xl justify-between">
+        {!isLoading &&
+          carMakes?.map((deal) => {
+            const car = data?.makeList.find((make) => make.name === deal);
+            return (
+              <div key={deal} className="flex items-center justify-center">
+                {car?.imageUrl && (
+                  <img
+                    src={car?.imageUrl}
+                    alt={car?.name}
+                    className="h-5 w-5 rounded-md object-cover"
+                  />
+                )}
+                <p
+                  className={`ml-2 rounded-md px-2 py-1 text-${
+                    selectedDeal === deal
+                      ? "white bg-orange"
+                      : "primary bg-white"
+                  }`}
+                  onClick={() => handleDealClick(deal)}
+                >
+                  {deal}
+                </p>
+              </div>
+            );
+          })}
         S
       </div>
       <div className=" grid grid-cols-1 gap-8 px-8 sm:grid-cols-2 lg:grid-cols-4">
