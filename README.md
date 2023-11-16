@@ -66,7 +66,7 @@ To get started with the AutoCheck App, follow these steps:
 
 ## Deployment
 
-The AutoCheck App is deployed on Vercel. You can access the app on the staging environment at [douglasnyamwaro289@gmail.com](https://autocheck-jjbr.vercel.app).
+The AutoCheck App is deployed on Vercel. You can access the app on the staging environment at [https://autocheck-jjbr.vercel.app](https://autocheck-jjbr.vercel.app).
 
 ## Feedback
 
