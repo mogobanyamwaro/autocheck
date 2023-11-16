@@ -15,6 +15,7 @@ export type DRAWER_VIEW = "PHOTO_GALLERY";
 function renderDrawerContent(view: DRAWER_VIEW | string) {
   switch (view) {
     case "PHOTO_GALLERY":
+      // @ts-ignore
       return <PhotoGallery />;
     default:
       return null;

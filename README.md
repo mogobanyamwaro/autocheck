@@ -29,7 +29,7 @@ To get started with the AutoCheck App, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/autocheck-app.git
+   git clone https://github.com/mogobanyamwaro/autocheck.git
    ```
 
 2. Navigate to the project directory:

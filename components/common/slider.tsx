@@ -12,6 +12,8 @@ export {
   Autoplay,
   Grid,
   EffectFade,
+  // @ts-ignore
 } from "swiper";
 export { Swiper, SwiperSlide } from "swiper/react";
+// @ts-ignore
 export type { SwiperOptions } from "swiper";
