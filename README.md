@@ -6,8 +6,21 @@ Welcome to AutoCheck App – your go-to platform for exploring a wide range of c
 
 # Screenshots
 
-![Screenshot 1](public/images/lambo.png)
-![Screenshot 2](public/images/phone.png)
+![Screenshot 1](public/images/screen1.png)
+<br>
+![Screenshot 2](public/images/screen2.png)
+<br>
+![Screenshot 3](public/images/screen3.png)
+<br>
+![Screenshot 4](public/images/screen4.png)
+<br>
+![Screenshot 5](public/images/screen5.png)
+<br>
+![Screenshot 6](public/images/screen6.png)
+<br>
+![Screenshot 7](public/images/screen7.png)
+<br>
+![Screenshot 8](public/images/screen8.png)
 
 ## Getting Started
 
